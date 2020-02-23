@@ -11,7 +11,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import ym from 'react-yandex-metrika';
 
 export const Portfolio = ({ breakpoint }) => (    
-    <section className="portfolio" onChange={() => ym('reachGoal', 'SWITCH_SLIDER')}>
+    <section className="portfolio">
         <div className="portfolio__title content">
             Наши работы
         </div>
@@ -30,8 +30,12 @@ export const Portfolio = ({ breakpoint }) => (
                 <Slide index={4}><Image src={slide_5} alt="" /></Slide>
             </Slider>
             <div className="portfolio__slider_buttons">
-                <ButtonBack><Image src={arrow} /></ButtonBack>
-                <ButtonNext><Image src={arrow} /></ButtonNext>
+                <div onClick={() => ym('reachGoal', 'SWITCH_SLIDER')}>
+                    <ButtonBack><Image src={arrow} /></ButtonBack>
+                </div>
+                <div onClick={() => ym('reachGoal', 'SWITCH_SLIDER')}>
+                    <ButtonNext><Image src={arrow} /></ButtonNext>
+                </div>
             </div>
       </CarouselProvider>
     </section>
