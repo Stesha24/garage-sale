@@ -9,7 +9,7 @@ export const Header = () => (
                 <span>G4U</span>
             </div>
             <div className="header__link">
-                <a href="https://www.avito.ru/omsk?q=%D0%B3%D0%B0%D1%80%D0%B0%D0%B6" target="_blank">
+                <a href="https://www.avito.ru/omsk?q=%D0%B3%D0%B0%D1%80%D0%B0%D0%B6" onClick="ym(57671344, 'reachGoal', 'EXTERNAL_LINK'); return true;" target="_blank">
                     Нужен гараж? Жми сюда!
                 </a>
             </div>
@@ -22,7 +22,7 @@ export const Header = () => (
                 Воплотим все ваши мечты в реальность
             </div>
             <div className="header__button">
-                <button onClick={() => scrollToAnchor("learnMore", 0)}>узнать больше</button>
+                <button onClick={() => { scrollToAnchor("learnMore", 0);  ym(57671344, 'reachGoal', 'LEARN_MORE_BUTTON_CLICK'); return true;}}>узнать больше</button>
             </div>
         </div>
     </header>

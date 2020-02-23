@@ -19,7 +19,7 @@ export const Footer = () => (
                 8 800 555 35 35
             </div>
             <div className="footer__contacts_email">
-                <a href="mailto:garage4you@example.com">garage4you@example.com</a>
+                <a href="mailto:garage4you@example.com" onClick="ym(57671344, 'reachGoal', 'MAILTO_CLICK'); return true;">garage4you@example.com</a>
             </div>
         </div>
     </footer>
