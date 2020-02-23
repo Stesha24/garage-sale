@@ -1,0 +1,75 @@
+.feedback {
+    padding: 40px 0 80px 0;
+    max-width: 100%;
+}
+
+.feedback__title {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.feedback__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback__item_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.feedback__item_image_1 {
+    background-image: url('./Sergey3.jpg');
+    background-size: 180%;
+    background-position-x: -45px;
+}
+
+.feedback__item_image_2 {
+    background-image: url('./Sergey2.jpg');
+    background-size: 170%;
+}
+
+.feedback__item_image_3 {
+    background-image: url('./Sergey.jpg');
+    background-size: 120%;
+}
+
+
+.feedback__item_content {
+    padding: 10px 20px;
+    text-align: center;   
+}
+
+.feedback__item_content_name {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;   
+}
+
+.feedback__item_content_text {
+    max-width: 300px;
+}
+
+@media(max-width: 768px) {
+    .feedback__title {
+        font-size: 28px;
+    }
+    .feedback__list {
+        flex-direction: column;
+    }
+    .feedback__item {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+.content {
+  margin: 0 auto;
+  max-width: 80%;
+  position: relative;
+}
+
+input, button {
+  outline: none;
+}
+
+@media(max-width: 360px) {
+  .content {
+      max-width: 90%; 
+  }
+}

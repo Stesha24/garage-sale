@@ -1,0 +1,71 @@
+.whyUs {
+    padding: 40px 15px 80px 15px;
+    max-width: 100%;
+    background: linear-gradient(90deg, #fff 20px, transparent 1%) center, linear-gradient(#fff 20px, transparent 1%) center, rgb(226, 226, 226);
+    background-size: 22px 22px;
+}
+
+.whyUs__title {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.whyUs__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.whyUs__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whyUs__item_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 5px solid #aaa;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+.whyUs__item_image_1 {
+    background-image: url('./specialists.png');
+}
+
+.whyUs__item_image_2 {
+    background-image: url('./design.png');
+}
+
+.whyUs__item_image_3 {
+    background-image: url('./heart.png');
+}
+
+.whyUs__item_image_4 {
+    background-image: url('./clients.png');
+}
+
+
+.whyUs__item_content {
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+@media(max-width: 768px) {
+    .whyUs__title {
+        font-size: 28px;
+    }
+    .whyUs__list {
+        flex-wrap: wrap;
+    }
+    .whyUs__item {
+        padding: 20px;
+    }
+    .whyUs__item_content {
+        width: 200px;
+    }
+}
