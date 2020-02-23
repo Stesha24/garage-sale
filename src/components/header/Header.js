@@ -21,7 +21,7 @@ export const Header = () => (
             <div className="header__description">
                 Воплотим все ваши мечты в реальность
             </div>
-            <div onClick="ym(57671344, 'reachGoal', 'LEARN_MORE_BUTTON_CLICK'); return true;" className="header__button">
+            <div className="header__button">
                 <button onClick={() => { scrollToAnchor("learnMore", 0);}}>узнать больше</button>
             </div>
         </div>
