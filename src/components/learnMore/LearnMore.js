@@ -10,10 +10,10 @@ export const LearnMore = ({ breakpoint }) => (
             <div className="learnMore__description">
                 Оставьте заявку и мы рассчитаем стоимость переделки Вашего гаража
             </div>
-            <form className="learnMore__form">
-                <input type="text" placeholder="Ваше имя" />
-                <input type="text" placeholder="Ваш телефон" />
-                <input type="text" placeholder="Ваш email" />
+            <form className="learnMore__form" nethod="POST" action="/" netlify>
+                <input type="text" name="name" placeholder="Ваше имя" />
+                <input type="text" name="phone" placeholder="Ваш телефон" />
+                <input type="text" name="email" placeholder="Ваш email" />
                 <button type="submit">оставить заявку</button>
             </form>
         </div>
