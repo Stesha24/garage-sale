@@ -10,11 +10,6 @@ export const LearnMore = ({ breakpoint }) => (
             <div className="learnMore__description">
                 Оставьте заявку и мы рассчитаем стоимость переделки Вашего гаража
             </div>
-            <form name="contacts" netlify netlify-honeypot="bot-field" hidden>
-                <input type="text" name="name" />
-                <input type="text" name="phone" />
-                <input type="text" name="email" />
-            </form>
             <form className="learnMore__form" name="contacts" method="POST">
                 <input type="hidden" name="form-name" value="contacts" />
                 <label><input type="text" name="name" placeholder="Ваше имя" /></label>
