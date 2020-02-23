@@ -10,7 +10,7 @@ export const LearnMore = ({ breakpoint }) => (
             <div className="learnMore__description">
                 Оставьте заявку и мы рассчитаем стоимость переделки Вашего гаража
             </div>
-            <form className="learnMore__form" name="contacts" nethod="POST" action="/" data-netlify="true">
+            <form className="learnMore__form" name="contacts" method="POST" action="/" data-netlify="true">
                 <input type="text" name="name" placeholder="Ваше имя" />
                 <input type="text" name="phone" placeholder="Ваш телефон" />
                 <input type="text" name="email" placeholder="Ваш email" />
