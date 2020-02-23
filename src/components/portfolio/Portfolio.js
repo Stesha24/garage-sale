@@ -29,8 +29,8 @@ export const Portfolio = ({ breakpoint }) => (
                 <Slide index={4}><Image src={slide_5} alt="" /></Slide>
             </Slider>
             <div className="portfolio__slider_buttons">
-                <ButtonBack onClick="ym(57671344, 'reachGoal', 'BUTTON_BACK_CLICK'); return true;"><Image src={arrow} /></ButtonBack>
-                <ButtonNext onClick="ym(57671344, 'reachGoal', 'BUTTON_NEXT_CLICK'); return true;"><Image src={arrow} /></ButtonNext>
+                <ButtonBack><Image src={arrow} /></ButtonBack>
+                <ButtonNext><Image src={arrow} /></ButtonNext>
             </div>
       </CarouselProvider>
     </section>
