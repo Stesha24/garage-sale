@@ -1,5 +1,6 @@
 import React from 'react';
 import './LearnMore.styles.css';
+import ym from 'react-yandex-metrika';
 
 export const LearnMore = ({ breakpoint }) => (
     <section className="learnMore" id="learnMore">
@@ -15,7 +16,7 @@ export const LearnMore = ({ breakpoint }) => (
                 <input type="text" name="name" placeholder="Ваше имя" />
                 <input type="text" name="phone" placeholder="Ваш телефон" />
                 <input type="text" name="email" placeholder="Ваш email" />
-                <button type="submit" onClick="ym(57671344, 'reachGoal', 'FORM_SUBMIT'); return true;">оставить заявку</button>
+                <button type="submit" onClick={() => ym('reachGoal', 'FORM_SUBMIT')}>оставить заявку</button>
             </form>
         </div>
         { !breakpoint.sm &&

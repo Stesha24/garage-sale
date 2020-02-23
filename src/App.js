@@ -7,6 +7,7 @@ import useBreakpoint from './components/utils/useMedia';
 import './App.css';
 import { Footer } from './components/footer/Footer';
 import { WhyUs } from './components/whyus/WhyUs';
+import { YMInitializer } from 'react-yandex-metrika';
 
 const queries = {
   xs: '(max-width: 320px)',
@@ -20,6 +21,7 @@ function App() {
 
   return breakpoint && (
     <div>
+      <YMInitializer accounts={[57671344]} options={{webvisor: true}} />
       <Header />
       <WhyUs />
       <LearnMore breakpoint={breakpoint} />

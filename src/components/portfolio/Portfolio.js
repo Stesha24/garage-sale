@@ -8,9 +8,10 @@ import slide_4 from './slide_4.jpg';
 import slide_5 from './slide_5.jpg';
 import arrow from './arrow.png';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import ym from 'react-yandex-metrika';
 
 export const Portfolio = ({ breakpoint }) => (    
-    <section className="portfolio">
+    <section className="portfolio" onChange={() => ym('reachGoal', 'SWITCH_SLIDER')}>
         <div className="portfolio__title content">
             Наши работы
         </div>
